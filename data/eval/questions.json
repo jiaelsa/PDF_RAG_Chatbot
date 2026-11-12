@@ -1,0 +1,8 @@
+[
+  {"question": "Who introduced RAG and when?", "doc": "rag_intro.pdf", "expected_page": 1, "expected_keywords": ["Lewis", "2020"]},
+  {"question": "Why does RAG not require retraining when knowledge changes?", "doc": "rag_intro.pdf", "expected_page": 1, "expected_keywords": ["index", "embedding"]},
+  {"question": "How many dimensions do all-MiniLM-L6-v2 embeddings have?", "doc": "rag_intro.pdf", "expected_page": 2, "expected_keywords": ["384"]},
+  {"question": "Which vector databases are mentioned?", "doc": "rag_intro.pdf", "expected_page": 2, "expected_keywords": ["ChromaDB", "FAISS", "Pinecone"]},
+  {"question": "How does RAG reduce hallucination?", "doc": "rag_intro.pdf", "expected_page": 3, "expected_keywords": ["retrieved", "page"]},
+  {"question": "What chunk size and overlap are typical?", "doc": "rag_intro.pdf", "expected_page": 3, "expected_keywords": ["800", "1000"]}
+]
