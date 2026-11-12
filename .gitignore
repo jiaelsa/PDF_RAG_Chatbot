@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Secrets & local state  (NEVER commit these)
+.env
+.streamlit/secrets.toml
+
+# Vector index built at runtime
+storage/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,90 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 619 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+50 780 Td
+(Introduction to Retrieval-Augmented Generation) Tj T*
+() Tj T*
+(Retrieval-Augmented Generation \(RAG\) is a technique that combines a retriever with a) Tj T*
+(language model. Instead of relying only on knowledge stored in model weights, the system) Tj T*
+(looks up relevant passages in an external knowledge base and gives them to the model as) Tj T*
+(context. RAG was introduced by Lewis et al. in 2020.) Tj T*
+(The main advantage of RAG is that knowledge can be updated without retraining. Adding a) Tj T*
+(new document only requires embedding it and inserting it in the index.) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 619 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+50 780 Td
+(Introduction to Retrieval-Augmented Generation) Tj T*
+() Tj T*
+(Vector embeddings map text to points in a high-dimensional space so that semantically) Tj T*
+(similar passages are close together. Sentence-Transformers models such as all-MiniLM-L6-v2) Tj T*
+(produce 384-dimensional embeddings. Similarity is usually measured with cosine similarity.) Tj T*
+(Vector databases like ChromaDB, FAISS and Pinecone use approximate nearest neighbour) Tj T*
+(search \(for example HNSW graphs\) to find the closest chunks in milliseconds, even with) Tj T*
+(hundreds of thousands of vectors.) Tj T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 591 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+50 780 Td
+(Introduction to Retrieval-Augmented Generation) Tj T*
+() Tj T*
+(Hallucination happens when a language model produces fluent but unsupported statements.) Tj T*
+(RAG reduces hallucination by restricting the answer to retrieved evidence and by returning) Tj T*
+(the document name and page number of every source, so that users can verify the claim.) Tj T*
+(Chunk size matters: chunks that are too small lose context, chunks that are too large) Tj T*
+(dilute the embedding. A typical choice is 800 to 1000 characters with 10 to 20 percent) Tj T*
+(overlap.) Tj T*
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000000993 00000 n 
+0000001119 00000 n 
+0000001789 00000 n 
+0000001915 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+2557
+%%EOF

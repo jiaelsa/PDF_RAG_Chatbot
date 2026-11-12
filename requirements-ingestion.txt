@@ -1,0 +1,8 @@
+# Ingestion + indexing dependencies (Member 1)
+pypdf>=4.0
+chromadb>=0.5
+sentence-transformers>=2.7
+python-dotenv>=1.0
+numpy>=1.26
+# Streamlit Community Cloud ships an old SQLite that ChromaDB rejects; this fixes it.
+pysqlite3-binary>=0.5.2; sys_platform == "linux"
