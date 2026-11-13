@@ -1,0 +1,7 @@
+question,answer,sources,retrieval_hit,keyword_recall,latency_s,mode
+Who introduced RAG and when?,RAG was introduced by Lewis et al. in 2020【1】.,rag_intro.pdf p.1; rag_intro.pdf p.3,1,1.0,4.34,llm
+Why does RAG not require retraining when knowledge changes?,"RAG keeps knowledge in an external index rather than in the model’s weights, so when information changes you only need to embed the new document and add it to the index—no model retraining is required [1].",rag_intro.pdf p.1; rag_intro.pdf p.3,1,0.5,0.81,llm
+How many dimensions do all-MiniLM-L6-v2 embeddings have?,The all‑MiniLM‑L6‑v2 model produces embeddings that are 384 dimensions long【1】.,rag_intro.pdf p.2,1,1.0,0.52,llm
+Which vector databases are mentioned?,"The passage mentions the vector databases ChromaDB, FAISS, and Pinecone【1】.",rag_intro.pdf p.2,1,1.0,0.81,llm
+How does RAG reduce hallucination?,"RAG reduces hallucination by limiting the model’s output to information that comes from retrieved evidence and by providing the source document name and page number for each claim, allowing users to verify the answer. [1]",rag_intro.pdf p.3; rag_intro.pdf p.1,1,1.0,0.74,llm
+What chunk size and overlap are typical?,"A typical chunk size is 800 to 1000 characters, with an overlap of 10 to 20 percent. [1]",rag_intro.pdf p.3,1,1.0,0.71,llm
