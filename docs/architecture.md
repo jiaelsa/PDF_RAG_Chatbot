@@ -3,12 +3,20 @@
 ```mermaid
 flowchart LR
   subgraph Offline["Ingestion (Member 1)"]
-    A[PDF upload] --> B[Parse + clean] --> C[Page-aware chunks] --> D[MiniLM embeddings] --> E[(ChromaDB)]
+    A[PDF upload] --> B[Parse + clean]
+    B --> C[Page-aware chunks]
+    C --> D[MiniLM embeddings]
+    D --> E[(ChromaDB)]
   end
+
   subgraph Online["Question answering (Member 2)"]
-    Q[User question] --> R[Embed query] --> S[Top-k cosine search + score threshold]
-    E --> S --> P[Grounded prompt with numbered passages] --> L[LLM] --> X[Answer + [n] citations]
-    S --> Y[Sources: document, page, score, snippet]
+    Q[User question] --> R[Embed query]
+    R --> S[Top-k cosine search + score threshold]
+    E --> S
+    S --> P[Grounded prompt with numbered passages]
+    P --> L[LLM]
+    L --> X["Answer + citations (n)"]
+    S --> Y["Sources: document, page, score, snippet"]
   end
 ```
 
